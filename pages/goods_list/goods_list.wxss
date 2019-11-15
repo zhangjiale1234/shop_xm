@@ -1,0 +1,62 @@
+/* pages/goods_list/goods_list.wxss */
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100rpx;
+  font-size: 34rpx;
+}
+
+.active {
+  color: #eb4450;
+  font-weight: 600;
+}
+
+.main_item {
+  display: flex;
+  height: 260rpx;
+  margin: 20rpx 10rpx;
+}
+
+.main_item .item_img {
+  width: 256rpx;
+  height: 250rpx;
+  background-color: #eb4450;
+}
+
+.item_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 20rpx;
+  padding: 5rpx;
+}
+
+.item_title {
+  font-size: 30rpx;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /*重新定义-webkit私有盒模型*/
+  -webkit-box-orient: vertical;
+  /*内容之间的排列顺序，vertical垂直方向排列*/
+  -webkit-line-clamp: 2;
+  /* 在第几行末尾显示省略号... */
+  word-break: break-all;
+}
+
+.item_img image {
+  width: 256rpx;
+  height: 250rpx;
+}
+.item_price{
+  color: #eb4450;
+  font-size: 40rpx;
+
+}
+.item_price::before{
+  content: '￥';
+  font-size: 30rpx;
+}

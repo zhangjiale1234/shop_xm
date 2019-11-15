@@ -1,0 +1,29 @@
+<!-- <view class="serach">
+  <view class="serach_in">
+    <icon type="search"></icon> 搜索</view>
+</view> -->
+<search />
+<view class="swiper">
+  <swiper indicator-dots  autoplay interval='{{2000}}'
+   indicator-color='rgba(0, 0, 0, .3)'>
+    <swiper-item wx:for="{{swiperList}}" wx:key="*this">
+      <image class="img" src="{{item.image_src}}"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="nav">
+  <navigator wx:for='{{catitems}}' wx:key='*this'>
+    <image class="nav_icon" src="{{item.image_src}}"></image></navigator>
+</view>
+<!-- 楼层 -->
+<block wx:for='{{floorList}}' :key='name'>
+<view class="main_title">{{item.floor_title.name}}</view>
+<view class="main">
+    <image src="{{item2.image_src}}"
+    wx:for='{{item.product_list}}' wx:key='item2.name' wx:for-item='item2'
+    ></image>
+</view>
+</block>
+
+<!-- 回到顶部 -->
+<view class="goTop" bindtap='goTop'>置顶</view>

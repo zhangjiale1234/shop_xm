@@ -1,0 +1,18 @@
+<!--pages/goods_list/goods_list.wxml-->
+<search />
+<view class="nav">
+  <view class="nav_item active">综合</view>
+  <view class="nav_item">销量</view>
+  <view class="nav_item">价格</view>
+</view>
+<block wx:for='{{goodsList}}' wx:key='goods_id'>
+  <navigator class="main_item" url='/pages/goods_detail/goods_detail?goods_id={{item.goods_id}}'>
+    <view class="item_img">
+      <image src="{{item.goods_small_logo}}"></image>
+    </view>
+    <view class="item_right">
+      <view class="item_title">{{item.goods_name}}</view>
+      <view class="item_price">{{item.goods_price}}</view>
+    </view>
+  </navigator>
+</block>

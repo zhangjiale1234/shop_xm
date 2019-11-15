@@ -1,0 +1,19 @@
+<search />
+<view class="category">
+  <scroll-view scroll-y class="category_left">
+    <block wx:for='{{cateData}}' wx:key='*this'>
+      <view class="category_left_item {{ currentIndex===index ? 'active' :''}}" bindtap='headleChage' data-index='{{index}}'>{{item.cat_name}}</view>
+    </block>
+  </scroll-view>
+  <scroll-view scroll-y class="category_right" scroll-top='{{goToTop}}'>
+  <block wx:for='{{rightData}}' :key='cat_id'>
+    <view class="right_title">{{item.cat_name}}</view>
+    <view class="right_main" >
+      <navigator class="main_item" wx:for='{{item.children}}' wx:for-item='item2' url="/pages/goods_list/goods_list?cid={{item2.cat_id}}&query={{item2.cat_name}}">
+        <image src="{{item2.cat_icon}}"></image>
+        <view>{{item2.cat_name}}</view>
+      </navigator>
+    </view>
+    </block>
+  </scroll-view>
+</view>

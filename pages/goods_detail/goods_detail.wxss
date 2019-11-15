@@ -1,0 +1,123 @@
+/* pages/goods_detail/goods_detail.wxss */
+
+.swiper-img{
+  width: 100%;
+  height: 730rpx;
+}
+.swiper-img image{
+  width: 100%;
+  height: 100%;
+}
+.goods_price{
+  font-size: 45rpx;
+  color: #e82c39;
+  padding: 10rpx 0;
+}
+.good_title{
+  display: flex;
+  box-sizing: border-box;
+}
+.title_left{
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /*重新定义-webkit私有盒模型*/
+  -webkit-box-orient: vertical;
+  /*内容之间的排列顺序，vertical垂直方向排列*/
+  -webkit-line-clamp: 2;
+  /* 在第几行末尾显示省略号... */
+  word-break: break-all;
+  flex: 1;
+  border-right: 1px solid #ccc;
+  padding:10rpx 70rpx 5rpx 20rpx;
+   box-sizing: border-box;
+  color: #343434;
+  font-size: 34rpx;
+}
+.title_right{
+  width: 150rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 32rpx;
+}
+.title_right image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.main_fast{
+  font-size: 30rpx;
+  padding: 10rpx;
+  color: #999999;
+}
+.bottom{
+  display: flex;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+
+}
+.bottom image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.bottom_call{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 22rpx;
+  flex: 3;
+  background-color: #fff;
+} 
+ .bottom_cart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 22rpx;
+  background-color: #fff;
+  flex: 3;
+}
+ .bottom_add{
+   height: 100rpx;
+   background-color: #f4b73f;
+   text-align: center;
+   font-size: 30rpx;
+   padding: 0 20rpx;
+   color: #fff;
+   line-height: 100rpx;
+   flex: 4;
+}
+ .bottom_buy{
+      height: 100rpx;
+   background-color: #eb4450;
+   text-align: center;
+   font-size: 30rpx;
+   padding: 0 20rpx;
+   color: #fff;
+   flex: 4;
+   line-height: 100rpx;
+} 
+.promote{
+  display: flex;
+  width: 100%;
+  height: 70rpx;
+  background-color: #fff;
+  align-items: center;
+  position: fixed;
+  bottom: 94rpx;
+}
+.promote_seacl{
+  width: 120rpx;
+  font-weight: 600;
+  padding:0 10rpx;
+  font-size: 32rpx;
+}
+.redice{
+  color: #e82c39;
+  padding:0 10rpx;
+  font-size: 32rpx;
+}
