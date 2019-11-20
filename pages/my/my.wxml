@@ -1,2 +1,65 @@
 <!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<view class="my">
+  <view class="head_bgc">
+    <view class="head_title">
+      <view class="head_img">
+        <image src="/imgs/call.png"></image>
+      </view>
+      <view class="head_nickname">青虫</view>
+    </view>
+  </view>
+  <view class="position">
+    <view class="main_nav">
+      <view class="nav_block">
+        <view>0</view>
+        <view>收藏的店铺</view>
+      </view>
+      <view class="nav_block">
+        <view>0</view>
+        <view>收藏的商品</view>
+      </view>
+      <view class="nav_block">
+        <view>0</view>
+        <view>关注的商品</view>
+      </view>
+      <view class="nav_block">
+        <view>0</view>
+        <view>我的足迹</view>
+      </view>
+    </view>
+  </view>
+  <view class="orders">
+    <view class="myorder">我的订单</view>
+    <view class="myorder_block">
+      <view class="block_item">
+        <image src="/imgs/daifukuan.png"></image>
+        <view>待付款</view>
+      </view>
+      <view class="block_item">
+        <image src="/imgs/daishouhuo.png"></image>
+        <view>代收款</view>
+      </view>
+      <view class="block_item">
+        <image src="/imgs/tuikuan.png"></image>
+        <view>退款/退货</view>
+      </view>
+      <view class="block_item">
+        <image src="/imgs/quanbudingdan.png"></image>
+        <view>全部订单</view>
+      </view>
+    </view>
+  </view>
+  <view class="adress">
+    <view class="adress_text">收货地址管理</view>
+  </view>
+</view>
+<view class="main_call">
+  <view class="call_row">
+    <view>联系客服</view>
+    <view class="call_row_rigt">15854815155</view>
+  </view>
+    <view class="call_row">
+    <view>意见反馈</view>
+    <view class="call_row_rigt">></view>
+  </view>
+</view>

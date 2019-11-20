@@ -1,1 +1,126 @@
 /* pages/cart/cart.wxss */
+page{
+  background-color: #f4f4f4;
+}
+.goods_shop{
+  padding: 30rpx;
+  border-bottom: 1px solid #ccc;
+  border-top: 4px solid #ccc;
+  font-size: 33rpx;
+}
+.showAdress{
+  padding: 30rpx;
+  font-size: 34rpx;
+}
+.people{
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 0rpx;
+}
+.goods_item{
+  display: flex;
+  position: relative;
+  background-color: #ffffff;
+  /* border-bottom: 1px solid #ccc; */
+  margin: 10rpx 0;
+}
+.item_left{
+  display: flex;
+  align-items: center;
+  width: 85rpx;
+  justify-content: center;
+}
+.item_right{
+  display: flex;
+  flex: 1;
+}
+.item_logo image{
+  width: 180rpx;
+  height: 180rpx;
+}
+.item_title{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10rpx;
+  font-size: 30rpx;
+}
+.item_price{
+  color: #e72332;
+  font-size: 35rpx;
+}
+.item_price::before{
+  content: '￥';
+  font-size: 30rpx;
+}
+.item_t{
+    overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /*重新定义-webkit私有盒模型*/
+  -webkit-box-orient: vertical;
+  /*内容之间的排列顺序，vertical垂直方向排列*/
+  -webkit-line-clamp: 2;
+  /* 在第几行末尾显示省略号... */
+  word-break: break-all;
+}
+.count{
+  display: flex;
+  position: absolute;
+  bottom: 20rpx;
+  right: 20rpx;
+}
+.rud,.add{
+  width: 40rpx;
+  height: 40rpx;
+  border: 2px solid #525252;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.number{
+  padding: 0 20rpx;
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+}
+.bottom_nav{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom_checkded{
+  display: flex;
+  align-items: center;
+  padding: 0 10rpx;
+  flex: 4;
+  font-size: 30rpx;
+}
+.total_price{
+  flex: 3;
+  font-size: 32rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.total_bottom{
+  color: #bcbbbc;
+  font-size: 28rpx;
+}
+.close{
+  flex: 3;
+  background-color: #e72332;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100rpx;
+  font-size: 30rpx;
+  color: #ffffff;
+}
+.notShop view{
+  display: flex;
+  justify-content: center;
+  padding: 20rpx 0;
+}

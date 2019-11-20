@@ -71,6 +71,7 @@
   font-size: 22rpx;
   flex: 3;
   background-color: #fff;
+  position: relative;
 } 
  .bottom_cart{
   display: flex;
@@ -112,7 +113,6 @@
 }
 .promote_seacl{
   width: 120rpx;
-  font-weight: 600;
   padding:0 10rpx;
   font-size: 32rpx;
 }
@@ -120,4 +120,11 @@
   color: #e82c39;
   padding:0 10rpx;
   font-size: 32rpx;
+}
+.btn_call{
+  position: absolute;
+  display: block;
+  opacity: 0;
+  width: 100% !important;
+  height: 100%!important;
 }

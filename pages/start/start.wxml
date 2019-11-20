@@ -1,0 +1,7 @@
+<!--pages/start/start.wxml-->
+<startTab />
+<view class="">
+<text>这是一个收藏界面</text>
+</view>
+
+

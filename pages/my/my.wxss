@@ -1,1 +1,114 @@
 /* pages/my/my.wxss */
+page{
+  background-color: #f4f4f4;
+}
+.head_bgc{
+  height: 420rpx;
+  width: 100vw;
+  background-color: #eb4450;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.head_title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.head_img image{
+  width: 150rpx;
+  height: 150rpx;
+  border: 3rpx solid #fff;
+  border-radius: 50%
+}
+.head_nickname{
+  font-size: 32rpx;
+  color: #fff;
+}
+.position{
+  position: relative;
+}
+.main_nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 15rpx;
+  background-color: #fff;
+  width: 90%;
+  position: absolute;
+  left: 30rpx;
+  top: -30rpx;
+  margin: 0 auto;
+}
+.nav_block{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+.orders{
+  margin-top: 100rpx;
+  background-color: #fff;
+}
+.myorder{
+  margin: 20rpx;
+  padding: 20rpx;
+  border-bottom: 2rpx solid #ccc;
+  font-size: 32rpx;
+}
+.block_item image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.myorder_block{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10rpx;
+  box-sizing: border-box;
+}
+.block_item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 30rpx;
+  padding: 10rpx 20rpx;
+}
+.block_item view{
+  padding: 15rpx 0;
+}
+.adress{
+  background-color: #fff;
+}
+.adress_text{
+margin: 20rpx;
+padding: 20rpx;
+font-size: 32rpx;
+position: relative;
+}
+.adress_text::after{
+  content: '>';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  color: #dfdfdf;
+  font-weight: 600;
+  transform: translate(0,-50%)
+}
+.main_call{
+  background-color: #fff;
+  margin: 10rpx 0;
+}
+.call_row{
+  display: flex;
+  justify-content: space-between;
+  margin: 10rpx 20rpx;
+  padding: 20rpx;
+  border-bottom: 1px solid #ccc;
+  font-size: 32rpx;
+}
+.call_row_rigt{
+  color: #a09fa0;
+}

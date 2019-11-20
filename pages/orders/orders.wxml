@@ -1,2 +1,21 @@
 <!--pages/orders/orders.wxml-->
-<text>pages/orders/orders.wxml</text>
+<view class="orderTab">
+  <view class="tab_item {{index === currentActive?'active':''}}" 
+   bindtap="headleChangeTab" data-index='{{index}}' wx:for='{{tabSelect}}' wx:key='{{index}}'>{{item.content}}</view>
+</view>
+<block wx:for='{{ordersList}}' wx:key='{{item.order_number}}' >
+<view class="order_item">
+  <view class="order_row">
+    <view class="order_left">订单编号</view>
+    <view class="order_num">{{item.order_number}}</view>
+  </view>
+  <view class="order_row">
+    <view class="order_left">订单价格</view>
+    <view class="order_price">{{item.order_price}}</view>
+  </view>
+  <view class="order_row">
+    <view class="order_left">订单日期</view>
+    <view class="order_date">{{item.create_time}}</view>
+  </view>
+</view>
+</block> 

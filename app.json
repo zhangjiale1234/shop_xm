@@ -1,6 +1,8 @@
 {
   "pages": [
+    "pages/close/close",
     "pages/goods_detail/goods_detail",
+    "pages/start/start",
     "pages/category/category",
     "pages/index/index",
     "pages/cart/cart",
@@ -17,11 +19,11 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "selectedColor":"#eb4450",
+    "selectedColor": "#eb4450",
     "list": [
       {
-        "selectedIconPath":"tabs/tab_home_fill@3x.png",
-        "iconPath":"tabs/tab_home_nor@3x.png",
+        "selectedIconPath": "tabs/tab_home_fill@3x.png",
+        "iconPath": "tabs/tab_home_nor@3x.png",
         "pagePath": "pages/index/index",
         "text": "首页"
       },
@@ -38,16 +40,16 @@
         "text": "购物车"
       },
       {
-       "selectedIconPath": "tabs/tab_my_fill@3x.png",
-      "iconPath": "tabs/tab_my_nor@3x.png",
+        "selectedIconPath": "tabs/tab_my_fill@3x.png",
+        "iconPath": "tabs/tab_my_nor@3x.png",
         "pagePath": "pages/my/my",
         "text": "我的"
       }
     ]
   },
-    "networkTimeout": {
-      "downloadFile": 10000
-    },
+  "networkTimeout": {
+    "downloadFile": 10000
+  },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

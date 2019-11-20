@@ -1,1 +1,48 @@
 /* pages/orders/orders.wxss */
+.orderTab{
+  display: flex;
+  justify-content: space-between;
+  font-size: 34rpx;
+  }
+.active{
+  color: #eb4450;
+}
+.tab_item{
+  height: 100rpx;
+  padding:0rpx 30rpx;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.active::before{
+  content: "";
+  width: 100%;
+  height: 10rpx;
+  background-color: #eb4450;
+  position: absolute;
+  bottom: 0;
+}
+.order_item{
+  border-bottom: 1rpx solid #ccc;
+  position:relative;
+  padding: 10rpx;
+}
+.order_item .order_row{
+  display: flex;
+  justify-content: space-between;
+  padding: 15rpx;
+  font-size: 30rpx;
+}
+.order_left,order_num{
+  color: #8c7a68;
+}
+.order_price{
+  color: #eb4450;
+  font-size: 36rpx;
+}
+.order_price::before{
+  content: '￥';
+   font-size: 36rpx;
+}
+

@@ -1,2 +1,53 @@
 <!--pages/cart/cart.wxml-->
-<text>pages/cart/cart.wxml</text>
+<view class="address" bindtap="address" wx:if='{{carArr.length}}'>
+  <button wx:if='{{!adress.userName}}'>+新增添收货地址</button>
+  <view class="showAdress" wx:else>
+    <view class="people">
+      <view class="people_left">收货人：{{adress.userName}}</view>
+      <view class="phone">电话：{{adress.telNumber}}</view>
+    </view>
+    <view class="Adress">收货地址：{{adress.adressNew}}</view>
+  </view>
+</view>
+<view class="goods">
+  <view class="goods_shop">优购生活馆</view>
+  <block wx:for='{{carArr}}' wx:key='goods_id'>
+    <view class="goods_item">
+      <view class="item_left">
+        <checkbox checked="{{item.car_checked}}" bindtap="headleCheckbox" data-index="{{index}}"></checkbox>
+      </view>
+      <view class="item_right">
+        <view class="item_logo">
+          <image src="{{item.goods_small_logo}}"></image>
+        </view>
+        <view class="item_title">
+          <view class="item_t">{{item.goods_name}}</view>
+          <view class="item_price">{{item.goods_price}}</view>
+        </view>
+      </view>
+      <view class="count">
+        <view class="rud" bindtap="headNumberChange" data-num="{{-1}}" data-index='{{index}}'>-</view>
+        <view class="number">{{item.count}}</view>
+        <view class="add" bindtap="headNumberChange" data-num="{{1}}" data-index='{{index}}'>+</view>
+      </view>
+    </view>
+  </block>
+  <view class="bottom_nav">
+    <view class="bottom_checkded" bindtap="checkAll">
+      <checkbox checked="{{checkAll}}"></checkbox>
+      <text>全选</text>
+    </view>
+    <view class="total_price">
+      <view class="total_top">
+        合计：{{totalMomey}}
+      </view>
+      <view class="total_bottom">包含运费</view>
+    </view>
+    <view class="close" bindtap="closeAccounts">结算({{totalCount}})</view>
+  </view>
+</view>
+
+<view class="notShop" wx:el>
+  <image src="/imgs/shopCart.png"></image>
+  <view> 购物车空空如也~~</view>
+</view>

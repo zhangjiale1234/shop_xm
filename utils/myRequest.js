@@ -31,6 +31,12 @@ export const getData = (obj)=>{
     wx.showLoading({
       title: '加载中',
     })
+    let token = wx.getStorageSync('token')
+    let headerurl = obj.url
+    obj.header = obj.header || {};
+    if (headerurl.includes('my/')){
+      obj.header.Authorization = token
+      }
     wx.request({
       ...obj,
       url: baseURL+obj.url,
